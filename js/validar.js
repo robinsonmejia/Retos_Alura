@@ -88,8 +88,9 @@ function desencriptar() {
     } else {
         if (expresion == false) {
             alert("Datos erroneos");
-        } else {
-            for (var c = 0; c < texto.length; c = c++) {
+        } 
+        else {
+            for (var c = 0; c < texto.length; c++) {
                 if (texto[c] + texto[c + 1] == "ai") {
                     texto.splice(c, 2, "a");
                 } else if (texto[c] + texto[c + 1] + texto[c + 2] + texto[c + 3] + texto[c + 4] == "enter") {
